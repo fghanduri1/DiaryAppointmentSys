@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+    <title>Diary Appointment System</title>
+    <!-- *** Load the jQuery and jQueryUI libraries here. *** -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <!-- *** Load jQueryUI default CSS from Google CDN. *** -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+
+  <!--  Load the LeafletJS API. -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+	<!-- Load local CSS and JavaScript. -->
+  <link rel = "stylesheet" href="css/index.css">
+  <script src = "scirpt/index.js"></script>
+  </head>
+  <body>
+    <!-- Produce buttons -->
+
+    <section>
+    <h1 class = "titling">Appointment</h1>
+ 
+          <h3 class = "detailing"> Please select a Button!</h3>
+  
+    </section>
+    
+    
+			<section class = "buttoning">
+            <button id="addNewAppointment" Width="89px" style="margin:10px;"> Add a new Appointment</button>
+            <button id= "showNewAppointment" Width="89px"style="margin:10px;"> Show Appointment</button>
+            <button id= "deleteAppointment" Width="89px" style="margin:10px;"> Delete Appointment</button>
+            <button id= "updateNewAppointment" Width="89px" style="margin:10px;"> Update Appointment</button>
+            <ul id = "appointmentsList"> </ul>
+             </section>
+             
+          
+             
+         
+          
+          <!-- Section for entering details of a new appointment. -->
+      		<section id="addAppointment">
+      		    <h5>Owner:</h5>
+      				<input type="text" id="addOwner">
+
+              <h5>Description:</h5>
+      				<input type="text" id="addDescription">
+
+              <h5>Date:</h5>
+      				<input type="text" id="addDate">
+
+              <h5>Duration:</h5>
+      				<input type="text" id="addDuration">
+
+      			<!-- Buttons for saving/cancelling. -->
+      			<section>
+      				<button id="saveAppointment">Save Appointment</button>
+      				<button id="cancel">Cancel</button>
+      			</section>
+      			
+      
+  
+      	
+      		
+      			
+      		</section>
+      		
+      		<section id= "showAppointment">
+      			<h5> Owner: </h5>
+      			<input type= "text" id= "ownerShowAppointment">
+      		
+      			<h5> From:</h5>
+      			<input type = "text" id = "startDateShowAppointment">
+      		
+      			<h5> To: </h5>
+      			<input type = "text" id = "endDateShowAppointment">
+      		
+      			<br>
+      		
+      			<section>
+      				<button id = "showAppointmentDialogButton">Show Appointment</button>
+      				<button id = "cancelShowAppointment">Cancel </button>
+      			</section>
+      		</section>
+      		
+      		
+      		
+      		<section id= "updateAppointment">
+      			<h5> Owner: </h5>
+      			<input type = "text" id ="newUpdateowner">
+      		
+      			<h5> Duration: </h5>
+      			<input type ="text" id= "newUpdateDuration">
+      		
+      			<h5> Date: </h5>
+      			<input type = "text" id = "newUpdateDate">
+      		
+      			<h5> Description: </h5>
+      			<input type = "text" id = "newUpdateDescription">
+      		
+      		<br> 
+      		
+      			<section>
+      				<button id = "updateAppointmentDialogButton">Update Appointment</button>
+      				<button id = "cancleUpdateAppointment">Cancel</button>
+      		
+      			</section>
+      		
+      		</section>
+      	
+        
+  </body>
+</html>
